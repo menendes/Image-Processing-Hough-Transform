@@ -11,7 +11,6 @@ PI=3.14159;
 
 for r=10:1:35
     
-
     accumulator=zeros((size(b,1)),(size(b,2)));
     
     for i=1:size(b,1)
@@ -22,10 +21,7 @@ for r=10:1:35
                     ac(2)=round(j+r*(sin(t)));
                     if(ac(1)>=1 && ac(1)<=246 && ac(2)>=1 && ac(2)<=300)
                         accumulator(ac(1),ac(2))=accumulator(ac(1),ac(2))+1;
-                    end
-                        
-                       
-                    
+                    end                                                
                 end
             end
         
